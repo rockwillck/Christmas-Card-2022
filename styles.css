@@ -1,9 +1,8 @@
 body {
-    background: url(background.jpg) no-repeat;
-    /* Keep the inherited background full size. */
+    /* background: url(background.png) no-repeat;
     background-attachment: fixed; 
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     display: grid;
     align-items: center;
     justify-content: center;
@@ -22,6 +21,8 @@ body {
     overflow: hidden;
     padding:0;
     font-size: 3.5vmin;
+    color:black;
+    background-color: rgba(255, 255, 255, 0.5);
 }
   
 .glass:before {
@@ -43,11 +44,16 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-canvas {
+#canvas {
     position:absolute;
     top:0;
     left:0;
     width:100vw;
     height:100vh;
     z-index:2;
+}
+
+#background {
+    position:absolute;
+    z-index: -2;
 }
