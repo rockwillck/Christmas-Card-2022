@@ -20,6 +20,7 @@ body {
     background: inherit;
     overflow: hidden;
     padding:0;
+    margin-bottom: 25vmin;
     font-size: 3.5vmin;
     color:black;
     background-color: rgba(255, 255, 255, 0.5);

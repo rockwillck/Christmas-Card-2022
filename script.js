@@ -17,7 +17,7 @@ function animate() {
         snow[1] += snow[2]
         ctx.fillStyle = "white"
         ctx.beginPath()
-        ctx.arc(snow[0], snow[1], canvas.width*0.002, 0, 2*Math.PI)
+        ctx.arc(snow[0], snow[1], canvas.width*0.005, 0, 2*Math.PI)
         ctx.closePath()
         ctx.fill()
         if (snow[1] > canvas.height) {
