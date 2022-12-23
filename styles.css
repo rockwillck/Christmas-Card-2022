@@ -19,7 +19,10 @@ body {
     z-index: 1;
     background: inherit;
     overflow: hidden;
-    padding:0;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+    padding-inline: 2vmin;
     margin-bottom: 25vmin;
     font-size: 3.5vmin;
     color:black;
