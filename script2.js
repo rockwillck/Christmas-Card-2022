@@ -38,11 +38,11 @@ function animate2() {
     ctx2.clearRect(0, 0, canvas2.width, canvas2.height)
 
     speed = canvas2.width/100
-    // carousel.forEach((bg) => {
-    //     if ((bg[1] >= 0 && bg[1] + bg[2] <= canvas2.width) || (bg[1] <= 0 && bg[1] + bg[2] >= canvas2.width)) {
-    //         speed = canvas2.width/500
-    //     }
-    // })
+    carousel.forEach((bg) => {
+        if (Math.abs(((2*bg[1] + bg[2])/2 - (canvas2.width/2))) <= canvas2.width*0.1) {
+            speed = canvas2.width/500
+        }
+    })
     carousel.forEach((bg, index) => {
         ctx2.drawImage(bg[0], bg[1], 0, bg[2], canvas2.height)
         bg[1] -= speed
